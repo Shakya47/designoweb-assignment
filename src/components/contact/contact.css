@@ -1,0 +1,191 @@
+.contact-container{
+    display: flex;
+    gap: 10px;
+    margin-top: 9rem;
+}
+
+.contact-banner{
+    background: #4d4d4d;
+    flex: 1 1 0;
+    padding: 5rem 2rem 4rem 3.5rem;
+    border-radius: 1rem;
+}
+
+.contact-banner>h3{
+    color: var(--colorWhite);
+    font-weight: 300;
+    font-size: 37px;
+    margin-bottom: 50px;
+    line-height: 1.2cm;
+}
+.contact-banner>h3>span{
+    color: var(--colorRed);
+}
+
+.contact-banner>p{
+    color: var(--colorWhite);
+    font-size: 22px;
+    font-weight: 300;
+    line-height: 1.2cm;
+    margin-bottom: 30px;
+}
+
+.contact-banner>img{
+    width: 400px;
+}
+
+.contact-form{
+    padding: 5rem 1rem 2rem 4rem;
+    flex: 1 1 auto;
+}
+
+.contact-form>h1{
+    font-weight: 400;
+    font-size: 50px;
+    margin-bottom: 1.2rem;
+}
+
+.contact-form>h2{
+    font-weight: 400;
+    font-size: 28px;
+    color: var(--colorRed);
+    margin-bottom: 3rem;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+
+.phoneNumber-container{
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+}
+.dropDown>select{
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+
+.dropDown{
+    position: relative;
+    
+}
+.dropDown::after{
+    content: '˅';
+    font: 25px "Consolas", monospace;
+    top: 30px;
+    padding: 0 0 2px;
+    /*left line */
+    right: 40px;
+    position: absolute;
+    pointer-events: none;
+}
+
+.dropDown>select{
+    padding: 1.5rem 4rem 1.5rem 1.5rem;
+    border-radius: 2.5rem;
+    border: none;
+    background: var(--colorGrey);
+    resize: none;
+    font-size: 20px;
+
+    
+}
+
+.phoneNumber-container>input{
+    flex: 1 1 50%;
+}
+
+form>input,
+.phoneNumber-container>input,
+form>textarea{
+    /* width: 100%; */
+    padding: 1.5rem;
+    border-radius: 2.5rem;
+    border: none;
+    background: var(--colorGrey);
+    resize: none;
+    font-size: 20px;
+    color: var(--colorWarmGrey);
+}
+
+label input {
+  display: none; /* Hide the default checkbox */
+}
+
+/* Style the artificial checkbox */
+label span {
+  height: 25px;
+  width: 25px;
+  border-radius: 5px;
+  border: none;
+  background: var(--colorGrey);
+  display: inline-block;
+  position: relative;
+  vertical-align: middle;
+  margin-right: 15px;
+}
+
+/* Style its checked state...with a ticked icon */
+[type=checkbox]:checked + span:before {
+  content: '\2714';
+  position: absolute;
+  top: -2px;
+  left: 5px;
+  vertical-align: bottom;
+  
+}
+
+form>label{
+    font-size: 20px;
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-banner>img{
+        width: 400px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-form{
+        padding-left: 0;
+    }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+    .contact-container{
+        flex-direction: column;
+    }
+    .contact-banner>h3{
+        font-size: 1.5rem;
+        line-height: 1.3;
+    }
+    .contact-banner>p{
+        font-size: 1rem;
+        line-height: 1.3;
+    }
+    .contact-banner>img{
+        width: 200px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .contact-form{
+        padding-left: 0;
+    }
+    .dropDown>select{
+        /* padding-right: 3rem; */
+    }
+    .phoneNumber-container{
+        gap: 10px;
+    }
+}

@@ -1,0 +1,64 @@
+.home-container{
+    display: flex;
+    flex-direction: row;
+    margin-top: 12rem;
+}
+.home-img img{
+    width: 45vw;
+}
+
+.home-data>h1{
+    font-size: 3.2rem;
+    font-weight: 600;
+}
+
+.home-data>p{
+    margin-top: 25px;
+    color: var(--colorOffBlack);
+    font-size: 1.5rem;
+}
+
+.home-data>button{
+    margin-top: 30px;   
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    .home-data>h1{
+        font-size: 2rem;
+        font-weight: 500;
+    }
+    
+    .home-data>p{
+        margin-top: 15px;
+        color: var(--colorOffBlack);
+        font-size: 1rem;
+    }
+    
+    .home-data>button{
+        margin-top: 30px;   
+    }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+    .home-data>h1{
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    
+    .home-data>p{
+        margin-top: 15px;
+        color: var(--colorOffBlack);
+        font-size: 1.2rem;
+    }
+    
+    .home-data>button{
+        margin-top: 30px;   
+    }
+
+    .home-img{
+        display: none;
+    }
+  }

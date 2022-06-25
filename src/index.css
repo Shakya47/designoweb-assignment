@@ -1,13 +1,58 @@
-body {
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600&display=swap');
+
+*{
+  box-sizing: border-box;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  font-family: "Rubik";
+  /* background-color:blueviolet; */
+  /* font-weight: 300; */
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+html{
+  scroll-behavior: smooth;
+}
+
+body{
+
+  line-height: 1.7;
+}
+
+:root{
+  --colorWhite: #fff;
+  --colorBlack: #000;
+  --colorOffBlack: #414040d2;
+  --colorWarmGrey: #707070;
+  --colorGrey: #f0f0f0;
+  --colorRed: #ef402f;
+  --colorOrange: #fd7e14;
+  --gradient: linear-gradient(90deg, rgb(255, 64, 64)20%, #fa6f0e 100%);
+}
+
+.container{
+  width: 80%;
+  margin: 0 auto;
+}
+
+.button-v{
+  width: max-content;
+  display: inline-block;
+  background-image: var(--gradient);
+  color: var(--colorWhite);
+  font-family: "Rubik", sans-serif;
+  border-radius: 2rem;
+  border: none;
+  padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+}
+
+.button-c{
+  width: max-content;
+  display: inline-block;
+  background-image: var(--gradient);
+  color: var(--colorWhite);
+  font-family: "Rubik", sans-serif;
+  border-radius: 2rem;
+  border: none;
+  /* padding: 0.5rem 1.2rem 0.5rem 1.2rem; */
+  font-size: 18px;
+  padding: 1rem 2rem 1rem 2rem;
 }

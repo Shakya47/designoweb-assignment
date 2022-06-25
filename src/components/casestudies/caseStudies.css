@@ -1,0 +1,159 @@
+#caseStudy-section{
+    margin-top: 8rem;
+}
+
+.container-title>h3{
+    color: var(--colorRed);
+    font-weight: 400;
+    margin-bottom: 15px;
+}
+
+.container-title>h1{
+    font-weight: 400;
+    font-size: 45px;
+    margin-bottom: 50px;
+}
+
+.carousel-item{
+    height: 700px;
+}
+
+.carousel-content{
+    float: left;
+    width: 73%;
+    height: 565px;
+    background: var(--colorGrey);
+    padding-top: 9rem;
+    padding-left: 5rem;
+    padding-right: 23rem;
+    border-radius: 0.5rem;
+}
+
+.carousel-content>h3{
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.carousel-content>h5{
+    font-size: 18px;
+    color: var(--colorRed);
+    margin-bottom: 30px;
+
+}
+
+.carousel-content>p{
+    font-size: 17px;
+    font-weight: 400;
+    color: var(--colorOffBlack);
+    margin-bottom: 50px;
+
+}
+
+.carousel-image{
+    float: right;
+    /* width: 50%; */
+    height: auto;
+    margin: 0 auto;
+    position: absolute;
+    top: 70px;
+    left: 50%;
+}
+
+.carousel-image>img{
+    width: 40rem;
+    border-radius: 1rem;
+}
+
+/* Inbuild class for bottom indicators */
+.carousel-indicators .active{
+    background: var(--colorOrange) !important;
+
+
+}
+
+.carousel-indicators button {
+    width: 20px !important;
+    height: 20px !important;
+    border: 1px solid transparent !important;
+    border-radius: 50%;
+    background: var(--colorOffBlack) !important;
+    margin-right: 10px !important;
+    margin-left: 10px !important;
+}
+
+.caseStudy-button{
+    margin-top: 6rem;
+    display: flex;
+    justify-content: center;
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    .carousel-content{
+        float: left;
+        width: 73%;
+        height: 565px;
+        background: var(--colorGrey);
+        padding-top: 9rem;
+        padding-left: 4rem;
+        padding-right: 12rem;
+        border-radius: 0.5rem;
+    }
+
+    .carousel-image{
+        float: right;
+        /* width: 50%; */
+        height: auto;
+        margin: 0 auto;
+        position: absolute;
+        top: 155px;
+        left: 50%;
+    }
+
+    .carousel-image>img{
+        width: 22rem;
+        border-radius: 1rem;
+    }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+    .carousel-content{
+        /* float: left; */
+        width: 100%;
+        height: auto;
+        background: var(--colorGrey);
+        padding-top: 18rem;
+        padding-left: 2rem;
+        padding-right: 2rem;
+        margin-top: 2rem;
+        border-radius: 0.5rem;
+    }
+
+    .carousel-content>h3,
+    .carousel-content>h5,
+    .carousel-content>p{
+        margin-bottom: 10px;
+    }
+
+    .carousel-content>button{
+        margin-bottom: 1.5rem;
+    }
+
+    .carousel-image{
+        height: auto;
+        position: absolute;
+        padding-top: 0rem;
+        left: 0%;
+    }
+
+    .carousel-image>img{
+        width: 22rem;
+        border-radius: 1rem;
+    }
+
+    .carousel-indicators button{
+        /* margin-top: 20rem; */
+    }
+  }

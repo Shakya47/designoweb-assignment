@@ -1,0 +1,151 @@
+#footer-section{
+    background: var(--colorGrey);
+    margin-top: 5rem;
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: row;
+    padding-top: 5rem;
+}
+
+.footer-logo{
+    display: flex;
+    flex-direction: row;
+}
+
+.logo-content{
+    margin-left: 35px;
+    padding-right: 10rem;
+}
+
+.logo-content>h1{
+    font-size: 35px;
+}
+.logo-content>h1>span{
+    font-size: 25px;
+    vertical-align: top;
+    font-weight: 300;
+}
+
+.logo-content>h2{
+    font-weight:400 ;
+}
+.menu-options:before, .menu-options:after  {
+    content: none;
+  }
+.menu-options{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5.5rem;
+}
+
+.menu-option>h3{
+    font-size: 20px;
+    margin-bottom: 2rem;
+}
+
+.menu-option>p>a{
+    text-decoration: none;
+    color: var(--colorWarmGrey);
+    font-size: 18px;
+
+}
+
+.menu-option>p>a>span{
+    margin: 0;
+    padding: 0;
+    line-height: 1cm;
+}
+
+.seperator-line{
+    content: '';
+    margin-top: 1.5rem;
+    border-bottom: 2px solid #adadad6c;
+    width: 100%;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: row;
+    padding: 2rem 0 2rem 0;
+    justify-content: space-between;
+}
+
+.footer-copyright>h3{
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.footer-site-links{
+    display: flex;
+    flex-direction: row;
+    gap:20px;
+}
+
+.footer-site-links>p>a{
+    text-decoration: none;
+    color: var(--colorBlack);
+    font-size: 19px;
+}
+
+.footer-social-links{
+    display: flex;
+    flex-direction: row;
+     gap:20px   
+}
+
+.footer-social-links>a{
+    text-decoration: none;
+    color: var(--colorBlack);
+    font-size: 25px;
+}
+
+/* For Tablet View */
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    .footer-menu{
+        flex-direction: column;
+    }
+    .footer-logo{
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .logo-content{
+        padding-right: 0;
+    }
+    .footer-links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+}
+
+/* For Mobile Phones Portrait or Landscape View */
+@media screen and (max-device-width: 640px) {
+    .footer-menu{
+        flex-direction: column;
+    }
+    .footer-logo{
+        justify-content: center;
+        margin-bottom: 2rem;
+    }
+    .logo-content{
+        padding-right: 0;
+    }
+    .menu-options{
+        flex-direction: column;
+    }
+    .footer-links{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+    }
+    .footer-copyright>h3{
+        font-size: 0.8rem;
+        font-weight: 300;
+    }
+  }
