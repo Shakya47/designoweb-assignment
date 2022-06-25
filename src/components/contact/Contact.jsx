@@ -3,6 +3,16 @@ import './contact.css';
 import ContactBanner from '../../assets/contactBanner.png';
 
 const Contact = () => {
+
+  const handleChange = e => {
+    this.form.validateFields(e.target);
+  }
+
+    const contactSubmit = e => {
+    e.preventDefault();
+    this.form.validateFields();
+    }
+
   return (
     <div id='contact-section' className='container contact-container'>
       <div className='contact-banner'>
@@ -13,9 +23,9 @@ const Contact = () => {
       <div className='contact-form'>
         <h1>Have a Query?</h1>
         <h2>Request Free Consultaion</h2>
-        <form>
-          <input type="text" name='name' placeholder='Your Full Name' required/>
-            <input type="email" name='email' placeholder='Email ID' required/>
+        <form onSubmit={contactSubmit}>
+          <input type="text" name='name' placeholder='Your Full Name' onChange={handleChange} required/>
+            <input type="email" name='email' placeholder='Email ID' onChange={handleChange}  required/>
             <div className='phoneNumber-container'>
               <div className='dropDown'>
               <select> 
@@ -26,7 +36,6 @@ const Contact = () => {
               </div>
               <input type="number" name="number" min="1000000000" max="9999999999" placeholder='Phone Number' required/>
             </div>
-            <input type="email" name='email' placeholder='Your Email' required/>
             <textarea name='message' rows="3" placeholder='Requirements' required></textarea>
             <label>
               <input type="checkbox" />
